@@ -142,6 +142,9 @@ int main(int argc, char **argv)
             chmod(fullpath, filepermission);
             fseek(arch, location, SEEK_SET);
         }
+
+        printf("t1, t2, t3, t4.txt t5.dat files  opened in the %s directory.\n", directory);
+
     }
 
     // Logic of condition will play a role according to argument using operationType variable.
@@ -242,6 +245,9 @@ int main(int argc, char **argv)
         }
         printf("The files have been merged.\n");
         fclose(output_file);
+
+        printf("The files have been merged.\n");
+
     }
     return 0;
 }
